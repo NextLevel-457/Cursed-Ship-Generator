@@ -36,30 +36,14 @@ function changeTextWithHTML() {
                  new Character("Bonnie","Bon","nnie",false),
                  new Character("Chica","Chi","ica",true),
                  new Character("Foxy","Fo","oxy",false),
-                 new Character("Toy Freddy","Toy Fredd","faz(Toy)",true),
-                 new Character("Toy Bonnie","Toy Bon","nnie(Toy)",true),
-                 new Character("Toy Chica","Toy Chi","ica(Toy)",true),
                  new Character("Mangle","Man","gled",false),
                  new Character("BB","Balloon","boy",true),
                  new Character("JJ","Jj","girl",false),
                  new Character("Puppet","Pupp","ppet",true),
-                 new Character("Phantom Freddy","Phantom Fredd","faz(Phantom)",true),
-                 new Character("Phantom Chica","Phantom Chi","ica(Phantom)",true),
-                 new Character("Phantom Foxy","Phantom Fo","oxy(Phantom)",true),
-                 new Character("Phantom Mangle","Phantom Man","gled(Phantom)",true),
-                 new Character("Phantom BB","Phantom Balloon","boy(Phantom)",true),
-                 new Character("Phantom Puppet","Phantom Pupp","ppet(Phantom)",true),
                  new Character("Fredbear","Fred","bear",true),
                  new Character("Springbonnie","Springbon","spring",true),
-                 new Character("Nightmare Freddy","Nightmare Fredd","faz(Nightmare)",true),
-                 new Character("Nightmare Bonnie","Nightmare Bon","nnie(Nightmare)",true),
-                 new Character("Nightmare Chica","Nightmare Chi","ica(Nightmare)",true),
-                 new Character("Nightmare Foxy","Nightmare Fo","oxy(Nightmare)",true),
-                 new Character("Nightmare Fredbear","Nightmare Fred","bear(Nightmare)",true),
                  new Character("Nightmare","Night","mare",true),
                  new Character("Plushtrap","Plush","trap(plush)",true),
-                 new Character("Nightmare Mangle","Nightmare Man","gled(Nightmare)",true),
-                 new Character("Nightmare BB","Nightmare Balloon","boy(Nightmare)",true),
                  new Character("Nightmarionne","Nightmar","marionne",false),
                  new Character("Circus Baby","Circus","baby",true),
                  new Character("Ballora","Ball","lora",false),
@@ -68,10 +52,6 @@ function changeTextWithHTML() {
                  new Character("Lolbit","Lol","bit",true),
                  new Character("Funtime Chica","Funtime Chi","ica(Funtime)",true),
                  new Character("Music Man","Musicm","man",true),
-                 new Character("Rockstar Freddy","Rockstar Fredd","faz(Rockstar)",true),
-                 new Character("Rockstar Bonnie","Rockstar Bon","nnie(Rockstar)",true),
-                 new Character("Rockstar Chica","Rockstar Chi","ica(Rockstar)",true),
-                 new Character("Rockstar Foxy","Rockstar Fo","oxy(Rockstar)",true),
                  new Character("Lefty","Left","efty",true),
                  new Character("Glamrock Freddy","Glamrock Fredd","faz(Glamrock)",true),
                  new Character("Glamrock Bonnie","Glamrock Bon","nnie(Glamrock)",true),
@@ -99,6 +79,36 @@ function changeTextWithHTML() {
         new Character("Withered Chica","Withered Chi","ica(Withered)",true),
         new Character("Withered Foxy","Withered Fo","oxy(Withered)",true),
         ]
+    let toys = [
+        new Character("Toy Freddy","Toy Fredd","faz(Toy)",true),
+        new Character("Toy Bonnie","Toy Bon","nnie(Toy)",true),
+        new Character("Toy Chica","Toy Chi","ica(Toy)",true),
+        ]
+    let phantoms = [
+        new Character("Phantom Freddy","Phantom Fredd","faz(Phantom)",true),
+        new Character("Phantom Chica","Phantom Chi","ica(Phantom)",true),
+        new Character("Phantom Foxy","Phantom Fo","oxy(Phantom)",true),
+        new Character("Phantom Mangle","Phantom Man","gled(Phantom)",true),
+        new Character("Phantom BB","Phantom Balloon","boy(Phantom)",true),
+        new Character("Phantom Puppet","Phantom Pupp","ppet(Phantom)",true),
+        ]
+    let nightmares = [
+        new Character("Nightmare Freddy","Nightmare Fredd","faz(Nightmare)",true),
+        new Character("Nightmare Bonnie","Nightmare Bon","nnie(Nightmare)",true),
+        new Character("Nightmare Chica","Nightmare Chi","ica(Nightmare)",true),
+        new Character("Nightmare Foxy","Nightmare Fo","oxy(Nightmare)",true),
+        new Character("Nightmare Fredbear","Nightmare Fred","bear(Nightmare)",true),
+        new Character("Nightmare Mangle","Nightmare Man","gled(Nightmare)",true),
+        new Character("Nightmare BB","Nightmare Balloon","boy(Nightmare)",true),
+        ]
+    let rockstars = [
+        new Character("Rockstar Freddy","Rockstar Fredd","faz(Rockstar)",true),
+        new Character("Rockstar Bonnie","Rockstar Bon","nnie(Rockstar)",true),
+        new Character("Rockstar Chica","Rockstar Chi","ica(Rockstar)",true),
+        new Character("Rockstar Foxy","Rockstar Fo","oxy(Rockstar)",true),
+        ]
+    
+    
     let md_characters = [
                  new Character("Uzi","Uzi","uzi",false),
                  new Character("V","V","V",true),
@@ -168,6 +178,18 @@ function changeTextWithHTML() {
     }
     if (document.getElementById("withereds-checkbox").checked && document.getElementById("fnaf-checkbox").checked) {
         possible_picks.push.apply(possible_picks,withereds)
+    }
+    if (document.getElementById("toys-checkbox").checked && document.getElementById("fnaf-checkbox").checked) {
+        possible_picks.push.apply(possible_picks,toys)
+    }
+    if (document.getElementById("phantoms-checkbox").checked && document.getElementById("fnaf-checkbox").checked) {
+        possible_picks.push.apply(possible_picks,phantoms)
+    }
+    if (document.getElementById("nightmares-checkbox").checked && document.getElementById("fnaf-checkbox").checked) {
+        possible_picks.push.apply(possible_picks,nightmares)
+    }
+    if (document.getElementById("rockstars-checkbox").checked && document.getElementById("fnaf-checkbox").checked) {
+        possible_picks.push.apply(possible_picks,rockstars)
     }
     
     if (document.getElementById("md-checkbox").checked) {
