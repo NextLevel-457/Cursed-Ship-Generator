@@ -20,8 +20,14 @@
         function changeTextWithHTML() {
             let labelElement = document
                 .getElementById("labelWithHTML");
+
+            let names = ["skibidi","gyatt","rizz"]
+            
+            let random1 = Math.floor(Math.random() * names.length);
+            let random2 = Math.floor(Math.random() * names.length);
+            let result = random1.concat(" x ",random2)
             labelElement.innerHTML =
-                "you have skibidi rizz";
+                result;
         }
     </script>
 </body>
