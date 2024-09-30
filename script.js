@@ -101,5 +101,7 @@ function changeTextWithHTML() {
     if (random1 instanceof Character && random2 instanceof Character) {
         let result = random1.getShipName(random2)
         labelElement.innerHTML = result;
+    } else {
+        labelElement.innerHTML = "nope";
     }
 }
