@@ -10,6 +10,7 @@
 <body>
     <!-- HTML label with an ID -->
     <label id="labelWithHTML">Click the button to generate a cursed ship!          </label>
+    <label id="label2">The generated ship name will appear here!          </label>
 
     <!-- Button to trigger text change -->
     <button onclick="changeTextWithHTML()">
