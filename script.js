@@ -31,7 +31,7 @@ function changeTextWithHTML() {
     let labelElement = document.getElementById("labelWithHTML");
     let labelElement2 = document.getElementById("label2");
 
-    let characters = [
+    let fnaf_characters = [
                  new Character("Freddy Fazbear","Fredd","faz",true),
                  new Character("Bonnie","Bon","nnie",false),
                  new Character("Chica","Chi","ica",true),
@@ -96,12 +96,14 @@ function changeTextWithHTML() {
                  new Character("Burntrap","Burn","trap(Burn)",true),
                  new Character("Glitchtrap","Glitch","trap(Glitch)",true),
                  new Character("Vanny","Vann","nny",true),
-                 
+                 ]
+    let md_characters = [
                  new Character("Uzi","Uzi","uzi",false),
                  new Character("V","V","V",true),
                  new Character("N","N","N",true),
                  new Character("J","J","J",true),
-                 
+                 ]
+    let helluva_boss_characters = [
                  new Character("Blitzø","Blitz","ø",false),
                  new Character("Asmodeus","Asmo","deus",true),
                  new Character("Barbie Wire","Barbie","wire",false),
@@ -122,7 +124,8 @@ function changeTextWithHTML() {
                  new Character("Striker","Strik","riker",true),
                  new Character("Verosika Mayday","Verosi","osika",true),
                  new Character("Vortex","Vort","tex",true),
-                 
+                 ]
+    let undertale_characters = [
                  new Character("Frisk","Fris","risk",true),
                  new Character("Chara","Char","hara",true),
                  new Character("Asriel","Asrie","riel",true),
@@ -136,7 +139,8 @@ function changeTextWithHTML() {
                  new Character("Asgore","As","gore",true),
                  new Character("Monster Kid","Monster","kid",true),
                  new Character("Flowey","Flow","owey",true),
-                 
+                 ]
+    let deltarune_characters = [
                  new Character("Kris","Kris","ris",true),
                  new Character("Susie","Susi","usie",false),
                  new Character("Ralsei","Ralse","alsei",false),
@@ -147,10 +151,15 @@ function changeTextWithHTML() {
                  new Character("Jevil","Jev","vil",true),
                  new Character("Berdly","Berd","erdly",false),
                  new Character("Queen","Quee","ueen",true),
-    ]
+                 ]
+
+    let possible_picks = []
+    if (!document.getElementById("fnaf-checkbox").checked) {
+        possible_picks.push.apply(possible_picks,fnaf_characters)
+    }
             
-    let random1 = characters[Math.floor(Math.random() * characters.length)];
-    let random2 = characters[Math.floor(Math.random() * characters.length)];
+    let random1 = possible_picks[Math.floor(Math.random() * possible_picks.length)];
+    let random2 = possible_picks[Math.floor(Math.random() * possible_picks.length)];
     if (random1 instanceof Character && random2 instanceof Character) {
         let result = random1.getShipName(random2)
         labelElement.innerHTML = random1.name + " x " + random2.name + ", or: ";
