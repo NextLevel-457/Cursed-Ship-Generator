@@ -157,6 +157,18 @@ function changeTextWithHTML() {
     if (!document.getElementById("fnaf-checkbox").checked) {
         possible_picks.push.apply(possible_picks,fnaf_characters)
     }
+    if (!document.getElementById("md-checkbox").checked) {
+        possible_picks.push.apply(possible_picks,md_characters)
+    }
+    if (!document.getElementById("hb-checkbox").checked) {
+        possible_picks.push.apply(possible_picks,helluva_boss_characters)
+    }
+    if (!document.getElementById("ut-checkbox").checked) {
+        possible_picks.push.apply(possible_picks,undertale_characters)
+    }
+    if (!document.getElementById("dt-checkbox").checked) {
+        possible_picks.push.apply(possible_picks,deltarun_characters)
+    }
             
     let random1 = possible_picks[Math.floor(Math.random() * possible_picks.length)];
     let random2 = possible_picks[Math.floor(Math.random() * possible_picks.length)];
