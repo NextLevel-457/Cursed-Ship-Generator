@@ -29,23 +29,24 @@ class Character {
 
 function changeTextWithHTML() {
     let labelElement = document.getElementById("labelWithHTML");
+    let labelElement2 = document.getElementById("label2");
 
     let characters = [
                  new Character("Freddy Fazbear","Fredd","faz",true),
                  new Character("Bonnie","Bon","nnie",false),
-                 new Character("Chica","Ch","ca",true),
+                 new Character("Chica","Chi","ca",true),
                  new Character("Foxy","Fo","oxy",false),
-                 "Withered Freddy",
-                 "Withered Bonnie",
-                 "Withered Chica",
-                 "Withered Foxy",
-                 "Toy Freddy",
-                 "Toy Bonnie",
-                 "Toy Chica",
-                 "Mangle",
-                 "BB",
-                 "JJ",
-                 "Puppet",
+                 new Character("Withered Freddy","Withered Fredd","faz(Withered)",true),
+                 new Character("Withered Bonnie","Withered Bon","nnie(Withered)",true),
+                 new Character("Withered Chica","Withered Chi","ca(Withered)",true),
+                 new Character("Withered Foxy","Withered Fo","oxy(Withered)",true),
+                 new Character("Toy Freddy","Toy Fredd","faz(Withered)",true),
+                 new Character("Toy Bonnie","Toy Bon","nnie(Withered)",true),
+                 new Character("Toy Chica","Toy Chi","ca(Withered)",true),
+                 new Character("Mangle","Man","gled",false),
+                 new Character("BB","Balloon","boy",true),
+                 new Character("JJ","J","girl",false),
+                 new Character("Puppet","Pup","pet",true),
                  "Phantom Freddy",
                  "Phantom Chica",
                  "Phantom Foxy",
@@ -100,7 +101,8 @@ function changeTextWithHTML() {
     let random2 = characters[Math.floor(Math.random() * characters.length)];
     if (random1 instanceof Character && random2 instanceof Character) {
         let result = random1.getShipName(random2)
-        labelElement.innerHTML = result;
+        labelElement.innerHTML = random1.name + " x " + random2.name + ", or: ";
+        labelElement2.innerHTML = result;
     } else {
         labelElement.innerHTML = "nope";
     }
