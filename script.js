@@ -166,7 +166,7 @@ function changeTextWithHTML() {
     if (!document.getElementById("ut-checkbox").checked) {
         possible_picks.push.apply(possible_picks,undertale_characters)
     }
-    if (!document.getElementById("dt-checkbox").checked) {
+    if (!document.getElementById("dr-checkbox").checked) {
         possible_picks.push.apply(possible_picks,deltarun_characters)
     }
             
