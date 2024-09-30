@@ -95,6 +95,7 @@ function changeTextWithHTML() {
                  new Character("Scraptrap","Scrap","trap(Scrap)",true),
                  new Character("Burntrap","Burn","trap(Burn)",true),
                  new Character("Glitchtrap","Glitch","trap(Glitch)",true),
+                 new Character("Vanny","Vann","nny",true),
                  
                  new Character("Uzi","Uzi","uzi",false),
                  new Character("V","V","V",true),
@@ -122,9 +123,30 @@ function changeTextWithHTML() {
                  new Character("Verosika Mayday","Verosi","osika",true),
                  new Character("Vortex","Vort","tex",true),
                  
-                 "Frisk","Chara","Asriel","Toriel","Papyrus","Sans","Undyne","Alphys","Muffet","Mettaton","Asgore","Monster Kid","Flowey",
+                 new Character("Frisk","Fris","risk",true),
+                 new Character("Chara","Char","hara",true),
+                 new Character("Asriel","Asrie","riel",true),
+                 new Character("Toriel","Tori","riel",false),
+                 new Character("Sans","Sans","sans",true),
+                 new Character("Papyrus","Papyr","yrus",true),
+                 new Character("Undyne","Undy","dyne",false),
+                 new Character("Alphys","Alph","phys",true),
+                 new Character("Muffet","Muff","ffet",true),
+                 new Character("Mettaton","Metta","aton",true),
+                 new Character("Asgore","As","gore",true),
+                 new Character("Monster Kid","Monster","kid",true),
+                 new Character("Flowey","Flow","owey",true),
                  
-                 "Kris","Susie","Ralsei","Lancer","Noelle","Spamton","Rouxls Kaard","Jevil","Berdly","Queen"
+                 new Character("Kris","Kris","ris",true),
+                 new Character("Susie","Susi","usie",false),
+                 new Character("Ralsei","Ralse","alsei",false),
+                 new Character("Lancer","Lanc","ancer",false),
+                 new Character("Noelle","Noell","elle",true),
+                 new Character("Spamton","Spam","ton",true),
+                 new Character("Rouxls Kaard","Rouxls","kaard",true),
+                 new Character("Jevil","Jev","vil",true),
+                 new Character("Berdly","Berd","erdly",false),
+                 new Character("Queen","Quee","ueen",true),
     ]
             
     let random1 = characters[Math.floor(Math.random() * characters.length)];
