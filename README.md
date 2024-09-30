@@ -18,12 +18,26 @@
     <br>
     <label id="exclusion">Fandoms to include:</label>
     <br>
+    
     <input type="checkbox" id="fnaf-checkbox" name="fnaf" checked/>
     <label for="fnaf-checkbox">FNaF</label>
     <br>
-    <input type="checkbox" id="withereds-checkbox" name="withereds-checkbox" style="margin-left: 20px;" checked/>
-    <label for="withereds-checkbox-checkbox">Withereds</label>
+    <input type="checkbox" id="withereds-checkbox" name="withereds" style="margin-left: 20px;" checked/>
+    <label for="withereds-checkbox">Withereds</label>
     <br>
+    <input type="checkbox" id="toys-checkbox" name="toys" style="margin-left: 20px;" checked/>
+    <label for="toys-checkbox">Toys</label>
+    <br>
+    <input type="checkbox" id="phantoms-checkbox" name="phantoms" style="margin-left: 20px;" checked/>
+    <label for="phantoms-checkbox">Phantoms</label>
+    <br>
+    <input type="checkbox" id="nightmares-checkbox" name="nightmares" style="margin-left: 20px;" checked/>
+    <label for="nightmares-checkbox">Nightmares</label>
+    <br>
+    <input type="checkbox" id="rockstars-checkbox" name="rockstars" style="margin-left: 20px;" checked/>
+    <label for="rockstars-checkbox">Rockstars</label>
+    <br>
+
     <input type="checkbox" id="md-checkbox" name="murder-drones" checked/>
     <label for="md-checkbox">Murder Drones</label>
     <br>
