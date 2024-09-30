@@ -161,7 +161,7 @@ function changeTextWithHTML() {
         ]
 
     let possible_picks = []
-    if (!document.getElementById("fnaf-checkbox").checked) {
+    if (document.getElementById("fnaf-checkbox").checked) {
         possible_picks.push.apply(possible_picks,fnaf_characters)
     }
     if (document.getElementById("md-checkbox").checked) {
