@@ -23,8 +23,8 @@
 
             let names = ["skibidi","gyatt","rizz"]
             
-            let random1 = Math.floor(Math.random() * names.length);
-            let random2 = Math.floor(Math.random() * names.length);
+            let random1 = names[Math.floor(Math.random() * names.length)];
+            let random2 = names[Math.floor(Math.random() * names.length)];
             let result = random1.concat(" x ",random2)
             labelElement.innerHTML =
                 result;
