@@ -18,22 +18,22 @@
     <br>
     <label id="exclusion">Fandoms to include:</label>
     <br>
-    <input type="checkbox" id="fnaf-checkbox" name="fnaf" />
+    <input type="checkbox" id="fnaf-checkbox" name="fnaf" checked/>
     <label for="fnaf-checkbox">FNaF</label>
     <br>
-    <input type="checkbox" id="md-checkbox" name="murder-drones" />
+    <input type="checkbox" id="md-checkbox" name="murder-drones" checked/>
     <label for="md-checkbox">Murder Drones</label>
     <br>
-    <input type="checkbox" id="hb-checkbox" name="hb" />
+    <input type="checkbox" id="hb-checkbox" name="hb" checked/>
     <label for="hb-checkbox">Helluva Boss</label>
     <br>
-    <input type="checkbox" id="ut-checkbox" name="ut" />
+    <input type="checkbox" id="ut-checkbox" name="ut" checked/>
     <label for="ut-checkbox">Undertale</label>
     <br>
-    <input type="checkbox" id="dr-checkbox" name="dr" />
+    <input type="checkbox" id="dr-checkbox" name="dr" checked/>
     <label for="dr-checkbox">Deltarune</label>
     <br>
-    <input type="checkbox" id="drugs-checkbox" name="drugs" />
+    <input type="checkbox" id="drugs-checkbox" name="drugs" checked/>
     <label for="drugs-checkbox">Drugs</label>
     <br>
     <hr>
