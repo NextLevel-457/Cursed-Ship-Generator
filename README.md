@@ -14,10 +14,7 @@
     <br>
     <button onclick="changeTextWithHTML()">Generate</button>
     <br>
-    <hr>
     </section>
-    <label id="warning">dis shit experimental it prob isn't implemented or half implemented or sum shit like that</label>
-    <br>
     <br>
     <label id="exclusion">Fandoms to exclude:</label>
     <br>
@@ -35,6 +32,11 @@
     <br>
     <input type="checkbox" id="dr-checkbox" name="dr" />
     <label for="dr-checkbox">Deltarune</label>
+    <br>
+    <hr>
+    <br>
+    <label id="warning">WARNING: Anything past this point is experimental.</label>
+    <br>
 
     <script src="script.js"></script>
 </body>
