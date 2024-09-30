@@ -152,6 +152,13 @@ function changeTextWithHTML() {
                  new Character("Berdly","Berd","erdly",false),
                  new Character("Queen","Quee","ueen",true),
                  ]
+    let drugs = [
+        new Character("Cocaine","Crack","crack",true),
+        new Character("Heroin","Heroin","-heroin",true),
+        new Character("Fentanyl","Fentanyl","-fentanyl",true),
+        new Character("Weed","Weed","-weed",true),
+        new Character("Meth","Meth","-meth",true),
+        ]
 
     let possible_picks = []
     if (!document.getElementById("fnaf-checkbox").checked) {
@@ -168,6 +175,9 @@ function changeTextWithHTML() {
     }
     if (!document.getElementById("dr-checkbox").checked) {
         possible_picks.push.apply(possible_picks,deltarune_characters)
+    }
+    if (!document.getElementById("drugs-checkbox").checked) {
+        possible_picks.push.apply(possible_picks,drugs)
     }
             
     let random1 = possible_picks[Math.floor(Math.random() * possible_picks.length)];
