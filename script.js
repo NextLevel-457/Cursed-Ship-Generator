@@ -36,10 +36,6 @@ function changeTextWithHTML() {
                  new Character("Bonnie","Bon","nnie",false),
                  new Character("Chica","Chi","ica",true),
                  new Character("Foxy","Fo","oxy",false),
-                 new Character("Withered Freddy","Withered Fredd","faz(Withered)",true),
-                 new Character("Withered Bonnie","Withered Bon","nnie(Withered)",true),
-                 new Character("Withered Chica","Withered Chi","ica(Withered)",true),
-                 new Character("Withered Foxy","Withered Fo","oxy(Withered)",true),
                  new Character("Toy Freddy","Toy Fredd","faz(Toy)",true),
                  new Character("Toy Bonnie","Toy Bon","nnie(Toy)",true),
                  new Character("Toy Chica","Toy Chi","ica(Toy)",true),
@@ -97,6 +93,12 @@ function changeTextWithHTML() {
                  new Character("Glitchtrap","Glitch","trap(Glitch)",true),
                  new Character("Vanny","Vann","nny",true),
                  ]
+    let withereds = [
+        new Character("Withered Freddy","Withered Fredd","faz(Withered)",true),
+        new Character("Withered Bonnie","Withered Bon","nnie(Withered)",true),
+        new Character("Withered Chica","Withered Chi","ica(Withered)",true),
+        new Character("Withered Foxy","Withered Fo","oxy(Withered)",true),
+        ]
     let md_characters = [
                  new Character("Uzi","Uzi","uzi",false),
                  new Character("V","V","V",true),
@@ -164,18 +166,26 @@ function changeTextWithHTML() {
     if (document.getElementById("fnaf-checkbox").checked) {
         possible_picks.push.apply(possible_picks,fnaf_characters)
     }
+    if (document.getElementById("withereds-checkbox").checked && document.getElementById("fnaf-checkbox").checked) {
+        possible_picks.push.apply(possible_picks,withereds)
+    }
+    
     if (document.getElementById("md-checkbox").checked) {
         possible_picks.push.apply(possible_picks,md_characters)
     }
+    
     if (document.getElementById("hb-checkbox").checked) {
         possible_picks.push.apply(possible_picks,helluva_boss_characters)
     }
+    
     if (document.getElementById("ut-checkbox").checked) {
         possible_picks.push.apply(possible_picks,undertale_characters)
     }
+    
     if (document.getElementById("dr-checkbox").checked) {
         possible_picks.push.apply(possible_picks,deltarune_characters)
     }
+    
     if (document.getElementById("drugs-checkbox").checked) {
         possible_picks.push.apply(possible_picks,drugs)
     }
