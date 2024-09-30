@@ -164,19 +164,19 @@ function changeTextWithHTML() {
     if (!document.getElementById("fnaf-checkbox").checked) {
         possible_picks.push.apply(possible_picks,fnaf_characters)
     }
-    if (!document.getElementById("md-checkbox").checked) {
+    if (document.getElementById("md-checkbox").checked) {
         possible_picks.push.apply(possible_picks,md_characters)
     }
-    if (!document.getElementById("hb-checkbox").checked) {
+    if (document.getElementById("hb-checkbox").checked) {
         possible_picks.push.apply(possible_picks,helluva_boss_characters)
     }
-    if (!document.getElementById("ut-checkbox").checked) {
+    if (document.getElementById("ut-checkbox").checked) {
         possible_picks.push.apply(possible_picks,undertale_characters)
     }
-    if (!document.getElementById("dr-checkbox").checked) {
+    if (document.getElementById("dr-checkbox").checked) {
         possible_picks.push.apply(possible_picks,deltarune_characters)
     }
-    if (!document.getElementById("drugs-checkbox").checked) {
+    if (document.getElementById("drugs-checkbox").checked) {
         possible_picks.push.apply(possible_picks,drugs)
     }
             
