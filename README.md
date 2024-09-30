@@ -16,7 +16,7 @@
     <br>
     </section>
     <br>
-    <label id="exclusion">Fandoms to exclude:</label>
+    <label id="exclusion">Fandoms to include:</label>
     <br>
     <input type="checkbox" id="fnaf-checkbox" name="fnaf" />
     <label for="fnaf-checkbox">FNaF</label>
