@@ -20,6 +20,8 @@
     <br>
     <input type="checkbox" id="fnaf-checkbox" name="fnaf" checked/>
     <label for="fnaf-checkbox">FNaF</label>
+    <input type="checkbox" id="withereds-checkbox" name="withereds-checkbox" style="margin-left: 20px;" checked/>
+    <label for="withereds-checkbox-checkbox">Withereds</label>
     <br>
     <input type="checkbox" id="md-checkbox" name="murder-drones" checked/>
     <label for="md-checkbox">Murder Drones</label>
