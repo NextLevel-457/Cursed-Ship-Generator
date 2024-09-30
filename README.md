@@ -9,11 +9,11 @@
 
 <body>
     <!-- HTML label with an ID -->
-    <label id="labelWithHTML">Initial Text</label>
+    <label id="labelWithHTML">do you have skibidi rizz?</label>
 
     <!-- Button to trigger text change -->
     <button onclick="changeTextWithHTML()">
-        Change Text</button>
+        click to find out</button>
 
     <script>
         // Function to change label text with HTML content
@@ -21,7 +21,7 @@
             let labelElement = document
                 .getElementById("labelWithHTML");
             labelElement.innerHTML =
-                "<em>New Text</em> using <strong>innerHTML</strong>";
+                "you have skibidi rizz";
         }
     </script>
 </body>
