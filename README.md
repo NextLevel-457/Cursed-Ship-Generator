@@ -17,7 +17,11 @@
     <br>
     <hr>
     </section>
-    
+    <label id="warning">dis shit experimental it prob isn't implemented or half implemented or sum shit like that</label>
+    <br>
+    <br>
+    <label id="exclusion">Fandoms to exclude:</label>
+    <br>
     <input type="checkbox" id="fnaf-checkbox" name="fnaf" />
     <label for="fnaf-checkbox">FNaF</label>
 
