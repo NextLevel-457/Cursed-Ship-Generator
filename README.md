@@ -33,6 +33,9 @@
     <input type="checkbox" id="dr-checkbox" name="dr" />
     <label for="dr-checkbox">Deltarune</label>
     <br>
+    <input type="checkbox" id="drugs-checkbox" name="drugs" />
+    <label for="drugs-checkbox">Drugs</label>
+    <br>
     <hr>
     <br>
     <label id="warning">WARNING: Anything past this point is experimental.</label>
