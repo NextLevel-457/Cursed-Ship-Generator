@@ -167,7 +167,7 @@ function changeTextWithHTML() {
         possible_picks.push.apply(possible_picks,undertale_characters)
     }
     if (!document.getElementById("dr-checkbox").checked) {
-        possible_picks.push.apply(possible_picks,deltarun_characters)
+        possible_picks.push.apply(possible_picks,deltarune_characters)
     }
             
     let random1 = possible_picks[Math.floor(Math.random() * possible_picks.length)];
