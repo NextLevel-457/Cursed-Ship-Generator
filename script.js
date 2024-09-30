@@ -45,7 +45,7 @@ function changeTextWithHTML() {
                  new Character("Toy Chica","Toy Chi","ica(Toy)",true),
                  new Character("Mangle","Man","gled",false),
                  new Character("BB","Balloon","boy",true),
-                 new Character("JJ","J","girl",false),
+                 new Character("JJ","Jj","girl",false),
                  new Character("Puppet","Pupp","ppet",true),
                  new Character("Phantom Freddy","Phantom Fredd","faz(Phantom)",true),
                  new Character("Phantom Chica","Phantom Chi","ica(Phantom)",true),
@@ -95,7 +95,18 @@ function changeTextWithHTML() {
                  new Character("Scraptrap","Scrap","trap(Scrap)",true),
                  new Character("Burntrap","Burn","trap(Burn)",true),
                  new Character("Glitchtrap","Glitch","trap(Glitch)",true),
-                 "Uzi","Serial Designation V","Serial Designation N","Serial Designation J","Blitzø","Asmodeus","Barbie Wire","Beelzebub","Crimson","Emberlynn Pinkle","Fizzarolli","Glitz","Glam","Loona","Mammon","Millie","Moxxie","Octavia","Sallie May","Stella","Stolas","Striker","Verosika Mayday","Vortex","Frisk","Chara","Asriel","Toriel","Papyrus","Sans","Undyne","Alphys","Muffet","Mettaton","Asgore","Monster Kid","Flowey","Kris","Susie","Ralsei","Lancer","Noelle","Spamton","Rouxls Kaard","Jevil","Berdly","Queen"]
+                 
+                 new Character("Uzi","Uzi","uzi",false),
+                 new Character("V","V","V",true),
+                 new Character("N","N","N",true),
+                 new Character("J","J","J",true),
+                 
+                 "Blitzø","Asmodeus","Barbie Wire","Beelzebub","Crimson","Emberlynn Pinkle","Fizzarolli","Glitz","Glam","Loona","Mammon","Millie","Moxxie","Octavia","Sallie May","Stella","Stolas","Striker","Verosika Mayday","Vortex",
+                 
+                 "Frisk","Chara","Asriel","Toriel","Papyrus","Sans","Undyne","Alphys","Muffet","Mettaton","Asgore","Monster Kid","Flowey",
+                 
+                 "Kris","Susie","Ralsei","Lancer","Noelle","Spamton","Rouxls Kaard","Jevil","Berdly","Queen"
+    ]
             
     let random1 = characters[Math.floor(Math.random() * characters.length)];
     let random2 = characters[Math.floor(Math.random() * characters.length)];
