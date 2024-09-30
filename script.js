@@ -96,8 +96,8 @@ function changeTextWithHTML() {
                  "Glitchtrap",
                  "Uzi","Serial Designation V","Serial Designation N","Serial Designation J","Blitzø","Asmodeus","Barbie Wire","Beelzebub","Crimson","Emberlynn Pinkle","Fizzarolli","Glitz","Glam","Loona","Mammon","Millie","Moxxie","Octavia","Sallie May","Stella","Stolas","Striker","Verosika Mayday","Vortex","Frisk","Chara","Asriel","Toriel","Papyrus","Sans","Undyne","Alphys","Muffet","Mettaton","Asgore","Monster Kid","Flowey","Kris","Susie","Ralsei","Lancer","Noelle","Spamton","Rouxls Kaard","Jevil","Berdly","Queen"]
             
-    let random1 = characters[Math.floor(Math.random() * names.length)];
-    let random2 = characters[Math.floor(Math.random() * names.length)];
+    let random1 = characters[Math.floor(Math.random() * characters.length)];
+    let random2 = characters[Math.floor(Math.random() * characters.length)];
     if (random1 instanceof Character && random2 instanceof Character) {
         let result = random1.getShipName(random2)
         labelElement.innerHTML = result;
