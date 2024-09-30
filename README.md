@@ -8,13 +8,19 @@
 </head>
 
 <body>
+    <section>
     <!-- HTML label with an ID -->
     <label id="labelWithHTML">Click the button to generate a cursed ship!          </label>
     <label id="label2">The generated ship name will appear here!          </label>
 
     <!-- Button to trigger text change -->
-    <button onclick="changeTextWithHTML()">
-        Generate</button>
+    <button onclick="changeTextWithHTML()">Generate</button>
+    
+    <input type="checkbox" id="fnaf-checkbox" name="fnaf" />
+    <label for="fnaf-checkbox">FNaF</label>
+
+    <div>
+    </section>
 
     <script src="script.js"></script>
 </body>
