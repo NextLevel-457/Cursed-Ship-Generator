@@ -19,7 +19,7 @@
     <input type="checkbox" id="fnaf-checkbox" name="fnaf" />
     <label for="fnaf-checkbox">FNaF</label>
 
-    <div>
+    <hr>
     </section>
 
     <script src="script.js"></script>
