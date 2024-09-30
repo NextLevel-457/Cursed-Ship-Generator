@@ -40,21 +40,21 @@ function changeTextWithHTML() {
                  new Character("Withered Bonnie","Withered Bon","nnie(Withered)",true),
                  new Character("Withered Chica","Withered Chi","ca(Withered)",true),
                  new Character("Withered Foxy","Withered Fo","oxy(Withered)",true),
-                 new Character("Toy Freddy","Toy Fredd","faz(Withered)",true),
-                 new Character("Toy Bonnie","Toy Bon","nnie(Withered)",true),
-                 new Character("Toy Chica","Toy Chi","ca(Withered)",true),
+                 new Character("Toy Freddy","Toy Fredd","faz(Toy)",true),
+                 new Character("Toy Bonnie","Toy Bon","nnie(Toy)",true),
+                 new Character("Toy Chica","Toy Chi","ca(Toy)",true),
                  new Character("Mangle","Man","gled",false),
                  new Character("BB","Balloon","boy",true),
                  new Character("JJ","J","girl",false),
-                 new Character("Puppet","Pup","pet",true),
-                 "Phantom Freddy",
-                 "Phantom Chica",
-                 "Phantom Foxy",
-                 "Phantom Mangle",
-                 "Phantom BB",
-                 "Phantom Puppet",
-                 "Fredbear",
-                 "Springbonnie",
+                 new Character("Puppet","Pupp","pet",true),
+                 new Character("Phantom Freddy","Phantom Fredd","faz(Phantom)",true),
+                 new Character("Phantom Chica","Phantom Chi","ca(Phantom)",true),
+                 new Character("Phantom Foxy","Phantom Fo","oxy(Phantom)",true),
+                 new Character("Phantom Mangle","Phantom Man","gled(Phantom)",true),
+                 new Character("Phantom BB","Phantom Balloon","boy(Phantom)",true),
+                 new Character("Phantom Puppet","Phantom Pupp","pet(Phantom)",true),
+                 new Character("Fredbear","Fred","bear",true),
+                 new Character("Springbonnie","Spring","spring",true),
                  "Nightmare Freddy",
                  "Nightmare Bonnie",
                  "Nightmare Chica",
@@ -104,6 +104,6 @@ function changeTextWithHTML() {
         labelElement.innerHTML = random1.name + " x " + random2.name + ", or: ";
         labelElement2.innerHTML = result;
     } else {
-        labelElement.innerHTML = "nope";
+        return;
     }
 }
