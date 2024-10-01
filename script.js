@@ -1,3 +1,23 @@
+// Replace with your Glitch project's URL
+    const backendUrl = 'https://airy-azure-macadamia.glitch.me/';
+
+    async function getCounter() {
+      const response = await fetch(`${backendUrl}/counter`);
+      const data = await response.json();
+      document.getElementById('counter').innerText = data.counter;
+    }
+
+    async function incrementCounter() {
+      const response = await fetch(`${backendUrl}/increment`, {
+        method: 'POST',
+      });
+      const data = await response.json();
+      document.getElementById('counter').innerText = data.counter;
+    }
+
+    // Fetch the current counter value when the page loads
+    window.onload = getCounter;
+
 class Character {
     constructor(name, prefix, suffix, prefersFirst) {
         this.name = name;
@@ -30,6 +50,7 @@ class Character {
 function changeTextWithHTML() {
     let labelElement = document.getElementById("labelWithHTML");
     let labelElement2 = document.getElementById("label2");
+    incrementCounter()
 
     let fnaf_characters = [
                  new Character("Freddy Fazbear","Fredd","faz",true),
