@@ -4,7 +4,7 @@
     async function getCounter() {
       const response = await fetch(`${backendUrl}/counter`);
       const data = await response.json();
-      document.getElementById('counter').innerText = "This website has generated " + data.counter " cursed ships!";
+      document.getElementById('counter').innerText = "This website has generated " + data.counter.toString() + " cursed ships!";
     }
 
     async function incrementCounter() {
@@ -12,7 +12,7 @@
         method: 'POST',
       });
       const data = await response.json();
-      document.getElementById('counter').innerText = "This website has generated " + data.counter " cursed ships!";
+      document.getElementById('counter').innerText = "This website has generated " + data.counter.toString() + " cursed ships!";
     }
 
     // Fetch the current counter value when the page loads
