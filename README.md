@@ -16,7 +16,7 @@
     <br>
     </section>
     <br>
-    <label id="counter">This has generated 0 cursed ships!</label>
+    <label id="counter">Loading ship count...</label>
     <br>
     <label id="exclusion">Fandoms to include:</label>
     <br>
